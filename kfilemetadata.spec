@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kfilemetadata
-Version  : 5.48.0
-Release  : 4
-URL      : https://download.kde.org/stable/frameworks/5.48/kfilemetadata-5.48.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.48/kfilemetadata-5.48.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.48/kfilemetadata-5.48.0.tar.xz.sig
+Version  : 5.49.0
+Release  : 5
+URL      : https://download.kde.org/stable/frameworks/5.49/kfilemetadata-5.49.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.49/kfilemetadata-5.49.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.49/kfilemetadata-5.49.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -19,10 +19,12 @@ Requires: kfilemetadata-locales
 BuildRequires : attr-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
-BuildRequires : exiv2-dev
 BuildRequires : karchive-dev
-BuildRequires : ki18n-dev
+BuildRequires : pkg-config
+BuildRequires : pkgconfig(exiv2)
 BuildRequires : poppler-dev
+BuildRequires : python3
+BuildRequires : qtbase-dev qtbase-extras mesa-dev
 
 %description
 This folder contains various small files to be indexed by indexerextractortests.
@@ -63,14 +65,14 @@ locales components for the kfilemetadata package.
 
 
 %prep
-%setup -q -n kfilemetadata-5.48.0
+%setup -q -n kfilemetadata-5.49.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1531926251
+export SOURCE_DATE_EPOCH=1534097425
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -78,12 +80,12 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1531926251
+export SOURCE_DATE_EPOCH=1534097425
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/kfilemetadata
-cp COPYING.LGPL-3 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-3
-cp COPYING.LGPL-2.1 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2.1
 cp COPYING.LGPL-2 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2
+cp COPYING.LGPL-2.1 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2.1
+cp COPYING.LGPL-3 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-3
 pushd clr-build
 %make_install
 popd
@@ -135,7 +137,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5FileMetaData.so.3
-/usr/lib64/libKF5FileMetaData.so.5.48.0
+/usr/lib64/libKF5FileMetaData.so.5.49.0
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
