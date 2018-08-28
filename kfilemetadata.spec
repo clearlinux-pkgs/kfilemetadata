@@ -6,7 +6,7 @@
 #
 Name     : kfilemetadata
 Version  : 5.49.0
-Release  : 5
+Release  : 6
 URL      : https://download.kde.org/stable/frameworks/5.49/kfilemetadata-5.49.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.49/kfilemetadata-5.49.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.49/kfilemetadata-5.49.0.tar.xz.sig
@@ -16,23 +16,36 @@ License  : LGPL-2.0 LGPL-2.1 LGPL-3.0
 Requires: kfilemetadata-lib
 Requires: kfilemetadata-license
 Requires: kfilemetadata-locales
+Requires: kfilemetadata-data
 BuildRequires : attr-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : exiv2-dev
 BuildRequires : karchive-dev
+BuildRequires : ki18n-dev
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(exiv2)
 BuildRequires : poppler-dev
 BuildRequires : python3
 BuildRequires : qtbase-dev qtbase-extras mesa-dev
+BuildRequires : taglib-dev
 
 %description
 This folder contains various small files to be indexed by indexerextractortests.
+
+%package data
+Summary: data components for the kfilemetadata package.
+Group: Data
+
+%description data
+data components for the kfilemetadata package.
+
 
 %package dev
 Summary: dev components for the kfilemetadata package.
 Group: Development
 Requires: kfilemetadata-lib
+Requires: kfilemetadata-data
 Provides: kfilemetadata-devel
 
 %description dev
@@ -42,6 +55,7 @@ dev components for the kfilemetadata package.
 %package lib
 Summary: lib components for the kfilemetadata package.
 Group: Libraries
+Requires: kfilemetadata-data
 Requires: kfilemetadata-license
 
 %description lib
@@ -72,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534097425
+export SOURCE_DATE_EPOCH=1535428532
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -80,7 +94,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1534097425
+export SOURCE_DATE_EPOCH=1535428532
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/kfilemetadata
 cp COPYING.LGPL-2 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2
@@ -93,6 +107,10 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files data
+%defattr(-,root,root,-)
+/usr/share/xdg/kfilemetadata.categories
 
 %files dev
 %defattr(-,root,root,-)
@@ -144,6 +162,8 @@ popd
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_officeextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_plaintextextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_poextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_taglibextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/writers/kfilemetadata_taglibwriter.so
 
 %files license
 %defattr(-,root,root,-)
