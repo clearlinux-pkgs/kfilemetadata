@@ -6,7 +6,7 @@
 #
 Name     : kfilemetadata
 Version  : 5.50.0
-Release  : 7
+Release  : 8
 URL      : https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz.sig
@@ -20,6 +20,9 @@ Requires: kfilemetadata-data
 BuildRequires : attr-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : exiv2-dev
+BuildRequires : karchive-dev
+BuildRequires : ki18n-dev
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(exiv2)
 BuildRequires : poppler-dev
@@ -83,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536424025
+export SOURCE_DATE_EPOCH=1536432788
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -91,7 +94,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536424025
+export SOURCE_DATE_EPOCH=1536432788
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/kfilemetadata
 cp COPYING.LGPL-2 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2
