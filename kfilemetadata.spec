@@ -5,29 +5,27 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kfilemetadata
-Version  : 5.50.0
-Release  : 8
-URL      : https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz.sig
+Version  : 5.51.0
+Release  : 9
+URL      : https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.0 LGPL-2.1 LGPL-3.0
-Requires: kfilemetadata-lib
-Requires: kfilemetadata-license
-Requires: kfilemetadata-locales
-Requires: kfilemetadata-data
+Requires: kfilemetadata-data = %{version}-%{release}
+Requires: kfilemetadata-lib = %{version}-%{release}
+Requires: kfilemetadata-license = %{version}-%{release}
+Requires: kfilemetadata-locales = %{version}-%{release}
 BuildRequires : attr-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
-BuildRequires : exiv2-dev
-BuildRequires : karchive-dev
-BuildRequires : ki18n-dev
+BuildRequires : extra-cmake-modules pkgconfig(poppler)
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(exiv2)
 BuildRequires : poppler-dev
 BuildRequires : python3
-BuildRequires : qtbase-dev qtbase-extras mesa-dev
+BuildRequires : qtbase-dev mesa-dev
 BuildRequires : taglib-dev
 
 %description
@@ -44,9 +42,9 @@ data components for the kfilemetadata package.
 %package dev
 Summary: dev components for the kfilemetadata package.
 Group: Development
-Requires: kfilemetadata-lib
-Requires: kfilemetadata-data
-Provides: kfilemetadata-devel
+Requires: kfilemetadata-lib = %{version}-%{release}
+Requires: kfilemetadata-data = %{version}-%{release}
+Provides: kfilemetadata-devel = %{version}-%{release}
 
 %description dev
 dev components for the kfilemetadata package.
@@ -55,8 +53,8 @@ dev components for the kfilemetadata package.
 %package lib
 Summary: lib components for the kfilemetadata package.
 Group: Libraries
-Requires: kfilemetadata-data
-Requires: kfilemetadata-license
+Requires: kfilemetadata-data = %{version}-%{release}
+Requires: kfilemetadata-license = %{version}-%{release}
 
 %description lib
 lib components for the kfilemetadata package.
@@ -79,27 +77,27 @@ locales components for the kfilemetadata package.
 
 
 %prep
-%setup -q -n kfilemetadata-5.50.0
+%setup -q -n kfilemetadata-5.51.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536432788
-mkdir clr-build
+export SOURCE_DATE_EPOCH=1539636970
+mkdir -p clr-build
 pushd clr-build
 %cmake ..
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536432788
+export SOURCE_DATE_EPOCH=1539636970
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/kfilemetadata
-cp COPYING.LGPL-2 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2
-cp COPYING.LGPL-2.1 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-2.1
-cp COPYING.LGPL-3 %{buildroot}/usr/share/doc/kfilemetadata/COPYING.LGPL-3
+mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
+cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2
+cp COPYING.LGPL-2.1 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2.1
+cp COPYING.LGPL-3 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-3
 pushd clr-build
 %make_install
 popd
@@ -155,7 +153,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5FileMetaData.so.3
-/usr/lib64/libKF5FileMetaData.so.5.50.0
+/usr/lib64/libKF5FileMetaData.so.5.51.0
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
@@ -166,10 +164,10 @@ popd
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/writers/kfilemetadata_taglibwriter.so
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/kfilemetadata/COPYING.LGPL-2
-/usr/share/doc/kfilemetadata/COPYING.LGPL-2.1
-/usr/share/doc/kfilemetadata/COPYING.LGPL-3
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2
+/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2.1
+/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-3
 
 %files locales -f kfilemetadata5.lang
 %defattr(-,root,root,-)
