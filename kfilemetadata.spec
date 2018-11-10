@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kfilemetadata
-Version  : 5.51.0
-Release  : 9
-URL      : https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.51/kfilemetadata-5.51.0.tar.xz.sig
+Version  : 5.52.0
+Release  : 10
+URL      : https://download.kde.org/stable/frameworks/5.52/kfilemetadata-5.52.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.52/kfilemetadata-5.52.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.52/kfilemetadata-5.52.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -30,6 +30,14 @@ BuildRequires : taglib-dev
 
 %description
 This folder contains various small files to be indexed by indexerextractortests.
+
+%package abi
+Summary: abi components for the kfilemetadata package.
+Group: Default
+
+%description abi
+abi components for the kfilemetadata package.
+
 
 %package data
 Summary: data components for the kfilemetadata package.
@@ -77,14 +85,14 @@ locales components for the kfilemetadata package.
 
 
 %prep
-%setup -q -n kfilemetadata-5.51.0
+%setup -q -n kfilemetadata-5.52.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539636970
+export SOURCE_DATE_EPOCH=1541869716
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -92,7 +100,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1539636970
+export SOURCE_DATE_EPOCH=1541869716
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
 cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2
@@ -105,6 +113,10 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files abi
+%defattr(-,root,root,-)
+/usr/share/abi/libKF5FileMetaData.so.5.52.0.abi
 
 %files data
 %defattr(-,root,root,-)
@@ -153,7 +165,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5FileMetaData.so.3
-/usr/lib64/libKF5FileMetaData.so.5.51.0
+/usr/lib64/libKF5FileMetaData.so.5.52.0
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
@@ -161,6 +173,7 @@ popd
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_plaintextextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_poextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_taglibextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_xmlextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/writers/kfilemetadata_taglibwriter.so
 
 %files license
