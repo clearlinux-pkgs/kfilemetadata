@@ -1,6 +1,7 @@
-5.55.0
+5.56.0
 exiv2-dev
 karchive-dev
 ki18n-dev
+libappimage-dev
 poppler-dev
 taglib-dev

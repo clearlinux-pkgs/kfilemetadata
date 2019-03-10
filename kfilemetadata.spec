@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kfilemetadata
-Version  : 5.55.0
-Release  : 15
-URL      : https://download.kde.org/stable/frameworks/5.55/kfilemetadata-5.55.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.55/kfilemetadata-5.55.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.55/kfilemetadata-5.55.0.tar.xz.sig
+Version  : 5.56.0
+Release  : 16
+URL      : https://download.kde.org/stable/frameworks/5.56/kfilemetadata-5.56.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.56/kfilemetadata-5.56.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.56/kfilemetadata-5.56.0.tar.xz.sig
 Summary  : A library for extracting file metadata
 Group    : Development/Tools
 License  : LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -20,11 +20,15 @@ Requires: kfilemetadata-locales = %{version}-%{release}
 BuildRequires : attr-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : exiv2-dev
 BuildRequires : extra-cmake-modules pkgconfig(poppler)
+BuildRequires : karchive-dev
+BuildRequires : ki18n-dev
 BuildRequires : pkg-config
 BuildRequires : poppler-dev
 BuildRequires : python3
 BuildRequires : qtbase-dev mesa-dev
+BuildRequires : taglib-dev
 
 %description
 This folder contains various small files to be indexed by indexerextractortests.
@@ -43,6 +47,7 @@ Group: Development
 Requires: kfilemetadata-lib = %{version}-%{release}
 Requires: kfilemetadata-data = %{version}-%{release}
 Provides: kfilemetadata-devel = %{version}-%{release}
+Requires: kfilemetadata = %{version}-%{release}
 
 %description dev
 dev components for the kfilemetadata package.
@@ -75,22 +80,23 @@ locales components for the kfilemetadata package.
 
 
 %prep
-%setup -q -n kfilemetadata-5.55.0
+%setup -q -n kfilemetadata-5.56.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549734723
+export SOURCE_DATE_EPOCH=1552180321
 mkdir -p clr-build
 pushd clr-build
+export LDFLAGS="${LDFLAGS} -fno-lto"
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1549734723
+export SOURCE_DATE_EPOCH=1552180321
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
 cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2
@@ -151,7 +157,8 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5FileMetaData.so.3
-/usr/lib64/libKF5FileMetaData.so.5.55.0
+/usr/lib64/libKF5FileMetaData.so.5.56.0
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_officeextractor.so
@@ -159,7 +166,9 @@ popd
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_poextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_popplerextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_postscriptdscextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_taglibextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_xmlextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/writers/kfilemetadata_taglibwriter.so
 
 %files license
 %defattr(0644,root,root,0755)
