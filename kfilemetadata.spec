@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kfilemetadata
-Version  : 5.56.0
-Release  : 16
-URL      : https://download.kde.org/stable/frameworks/5.56/kfilemetadata-5.56.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.56/kfilemetadata-5.56.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.56/kfilemetadata-5.56.0.tar.xz.sig
+Version  : 5.57.0
+Release  : 17
+URL      : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz.sig
 Summary  : A library for extracting file metadata
 Group    : Development/Tools
 License  : LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -80,23 +80,22 @@ locales components for the kfilemetadata package.
 
 
 %prep
-%setup -q -n kfilemetadata-5.56.0
+%setup -q -n kfilemetadata-5.57.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552180321
+export SOURCE_DATE_EPOCH=1555192260
 mkdir -p clr-build
 pushd clr-build
-export LDFLAGS="${LDFLAGS} -fno-lto"
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1552180321
+export SOURCE_DATE_EPOCH=1555192260
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
 cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2
@@ -121,6 +120,7 @@ popd
 /usr/include/KF5/KFileMetaData/KFileMetaData/Extractor
 /usr/include/KF5/KFileMetaData/KFileMetaData/ExtractorCollection
 /usr/include/KF5/KFileMetaData/KFileMetaData/ExtractorPlugin
+/usr/include/KF5/KFileMetaData/KFileMetaData/MimeUtils
 /usr/include/KF5/KFileMetaData/KFileMetaData/Properties
 /usr/include/KF5/KFileMetaData/KFileMetaData/PropertyInfo
 /usr/include/KF5/KFileMetaData/KFileMetaData/SimpleExtractionResult
@@ -137,6 +137,7 @@ popd
 /usr/include/KF5/KFileMetaData/kfilemetadata/extractorcollection.h
 /usr/include/KF5/KFileMetaData/kfilemetadata/extractorplugin.h
 /usr/include/KF5/KFileMetaData/kfilemetadata/kfilemetadata_export.h
+/usr/include/KF5/KFileMetaData/kfilemetadata/mimeutils.h
 /usr/include/KF5/KFileMetaData/kfilemetadata/properties.h
 /usr/include/KF5/KFileMetaData/kfilemetadata/propertyinfo.h
 /usr/include/KF5/KFileMetaData/kfilemetadata/simpleextractionresult.h
@@ -157,7 +158,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5FileMetaData.so.3
-/usr/lib64/libKF5FileMetaData.so.5.56.0
+/usr/lib64/libKF5FileMetaData.so.5.57.0
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
