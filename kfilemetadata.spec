@@ -6,7 +6,7 @@
 #
 Name     : kfilemetadata
 Version  : 5.57.0
-Release  : 18
+Release  : 19
 URL      : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz.sig
