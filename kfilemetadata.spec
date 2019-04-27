@@ -6,7 +6,7 @@
 #
 Name     : kfilemetadata
 Version  : 5.57.0
-Release  : 19
+Release  : 20
 URL      : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz.sig
@@ -25,6 +25,9 @@ BuildRequires : extra-cmake-modules pkgconfig(poppler)
 BuildRequires : karchive-dev
 BuildRequires : ki18n-dev
 BuildRequires : pkg-config
+BuildRequires : pkgconfig(libavformat)
+BuildRequires : pkgconfig(libavutil)
+BuildRequires : pkgconfig(libswscale)
 BuildRequires : poppler-dev
 BuildRequires : python3
 BuildRequires : qtbase-dev mesa-dev
@@ -87,7 +90,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1555330266
+export SOURCE_DATE_EPOCH=1556387381
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -95,7 +98,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1555330266
+export SOURCE_DATE_EPOCH=1556387381
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
 cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kfilemetadata/COPYING.LGPL-2
@@ -160,6 +163,7 @@ popd
 /usr/lib64/libKF5FileMetaData.so.3
 /usr/lib64/libKF5FileMetaData.so.5.57.0
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_ffmpegextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_officeextractor.so

@@ -3,5 +3,8 @@ exiv2-dev
 karchive-dev
 ki18n-dev
 libappimage-dev
+pkgconfig(libavformat)
+pkgconfig(libavutil)
+pkgconfig(libswscale)
 poppler-dev
 taglib-dev
