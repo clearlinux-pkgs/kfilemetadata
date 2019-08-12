@@ -1,6 +1,7 @@
-5.60.0
+5.61.0
 exiv2-dev
 karchive-dev
+kconfig-dev
 ki18n-dev
 libappimage-dev
 pkgconfig(libavformat)
