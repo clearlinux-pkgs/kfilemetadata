@@ -1,9 +1,4 @@
-5.64.0
-exiv2-dev
-karchive-dev
-kconfig-dev
-ki18n-dev
-libappimage-dev
+5.65.0
 pkgconfig(libavformat)
 pkgconfig(libavutil)
 pkgconfig(libswscale)
