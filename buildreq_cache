@@ -1,4 +1,5 @@
-5.65.0
+5.66.0
+ki18n-dev
 pkgconfig(libavformat)
 pkgconfig(libavutil)
 pkgconfig(libswscale)
