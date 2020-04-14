@@ -6,7 +6,7 @@
 #
 Name     : kfilemetadata
 Version  : 5.69.0
-Release  : 33
+Release  : 34
 URL      : https://download.kde.org/stable/frameworks/5.69/kfilemetadata-5.69.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.69/kfilemetadata-5.69.0.tar.xz
 Source1  : https://download.kde.org/stable/frameworks/5.69/kfilemetadata-5.69.0.tar.xz.sig
@@ -90,7 +90,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586875507
+export SOURCE_DATE_EPOCH=1586875647
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -107,7 +107,7 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1586875507
+export SOURCE_DATE_EPOCH=1586875647
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
 cp %{_builddir}/kfilemetadata-5.69.0/COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kfilemetadata/ba8966e2473a9969bdcab3dc82274c817cfd98a1
