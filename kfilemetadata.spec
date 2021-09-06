@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kfilemetadata
-Version  : 5.83.0
-Release  : 49
-URL      : https://download.kde.org/stable/frameworks/5.83/kfilemetadata-5.83.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.83/kfilemetadata-5.83.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.83/kfilemetadata-5.83.0.tar.xz.sig
+Version  : 5.85.0
+Release  : 50
+URL      : https://download.kde.org/stable/frameworks/5.85/kfilemetadata-5.85.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.85/kfilemetadata-5.85.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.85/kfilemetadata-5.85.0.tar.xz.sig
 Summary  : A library for extracting file metadata
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.1 LGPL-3.0
@@ -23,6 +23,7 @@ BuildRequires : buildreq-kde
 BuildRequires : extra-cmake-modules pkgconfig(poppler)
 BuildRequires : extra-cmake-modules-data
 BuildRequires : pkg-config
+BuildRequires : pkgconfig(exiv2)
 BuildRequires : pkgconfig(libavformat)
 BuildRequires : pkgconfig(libavutil)
 BuildRequires : pkgconfig(libswscale)
@@ -81,39 +82,39 @@ locales components for the kfilemetadata package.
 
 
 %prep
-%setup -q -n kfilemetadata-5.83.0
-cd %{_builddir}/kfilemetadata-5.83.0
+%setup -q -n kfilemetadata-5.85.0
+cd %{_builddir}/kfilemetadata-5.85.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1623645470
+export SOURCE_DATE_EPOCH=1630894320
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1623645470
+export SOURCE_DATE_EPOCH=1630894320
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
-cp %{_builddir}/kfilemetadata-5.83.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
-cp %{_builddir}/kfilemetadata-5.83.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/3c3d7573e137d48253731c975ecf90d74cfa9efe
-cp %{_builddir}/kfilemetadata-5.83.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/6f1f675aa5f6a2bbaa573b8343044b166be28399
-cp %{_builddir}/kfilemetadata-5.83.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/757b86330df80f81143d5916b3e92b4bcb1b1890
-cp %{_builddir}/kfilemetadata-5.83.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/kfilemetadata-5.83.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kfilemetadata-5.85.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
+cp %{_builddir}/kfilemetadata-5.85.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/3c3d7573e137d48253731c975ecf90d74cfa9efe
+cp %{_builddir}/kfilemetadata-5.85.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/6f1f675aa5f6a2bbaa573b8343044b166be28399
+cp %{_builddir}/kfilemetadata-5.85.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/757b86330df80f81143d5916b3e92b4bcb1b1890
+cp %{_builddir}/kfilemetadata-5.85.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kfilemetadata-5.85.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/e458941548e0864907e654fa2e192844ae90fc32
 pushd clr-build
 %make_install
 popd
@@ -172,7 +173,8 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5FileMetaData.so.3
-/usr/lib64/libKF5FileMetaData.so.5.83.0
+/usr/lib64/libKF5FileMetaData.so.5.85.0
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_ffmpegextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
