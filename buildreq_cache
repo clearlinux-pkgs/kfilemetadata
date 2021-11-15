@@ -1,8 +1,4 @@
-5.87.0
-ki18n-dev
+5.88.0
 pkgconfig(exiv2)
-pkgconfig(libavformat)
-pkgconfig(libavutil)
-pkgconfig(libswscale)
 poppler-dev
 taglib-dev
