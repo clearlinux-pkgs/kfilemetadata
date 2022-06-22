@@ -6,7 +6,7 @@
 #
 Name     : kfilemetadata
 Version  : 5.95.0
-Release  : 61
+Release  : 62
 URL      : https://download.kde.org/stable/frameworks/5.95/kfilemetadata-5.95.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.95/kfilemetadata-5.95.0.tar.xz
 Source1  : https://download.kde.org/stable/frameworks/5.95/kfilemetadata-5.95.0.tar.xz.sig
@@ -87,11 +87,15 @@ locales components for the kfilemetadata package.
 cd %{_builddir}/kfilemetadata-5.95.0
 
 %build
+## build_prepend content
+# Make sure the package only builds if karchive has been updated first
+sed -i -r -e 's,(KF.? \$\{KF.?_DEP_VERSION\} COMPONENTS Archive)(.*\))$,\1 REQUIRED \2,' CMakeLists.txt
+## build_prepend end
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655139464
+export SOURCE_DATE_EPOCH=1655918142
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -107,7 +111,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1655139464
+export SOURCE_DATE_EPOCH=1655918142
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfilemetadata
 cp %{_builddir}/kfilemetadata-5.95.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kfilemetadata/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
@@ -180,6 +184,8 @@ popd
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_ffmpegextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_mobiextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_odfextractor.so
+/usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_office2007extractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_officeextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_plaintextextractor.so
 /usr/lib64/qt5/plugins/kf5/kfilemetadata/kfilemetadata_poextractor.so

@@ -1,0 +1,2 @@
+# Make sure the package only builds if karchive has been updated first
+sed -i -r -e 's,(KF.? \$\{KF.?_DEP_VERSION\} COMPONENTS Archive)(.*\))$,\1 REQUIRED \2,' CMakeLists.txt
