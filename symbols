@@ -1,158 +1,158 @@
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfo8allNamesEv
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfo8fromNameERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoC1ENS_8Property8PropertyE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoC1ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoC1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoC2ENS_8Property8PropertyE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoC2ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoC2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12PropertyInfoaSERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData12hasAttributeERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData12setAttributeERK7QStringS3_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData12setOriginUrlERK4QUrl
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData14setUserCommentERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData20setOriginEmailSenderERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData21setOriginEmailSubjectERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData23setOriginEmailMessageIdERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData7setTagsERK5QListI7QStringE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData9attributeERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaData9setRatingEi
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataC1ERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataC1ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataC2ERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataC2ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12UserMetaDataaSERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPlugin11qt_metacallEN11QMetaObject4CallEiPPv
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPlugin11qt_metacastEPKc
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPluginC1EP7QObject
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPluginC2EP7QObject
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPluginD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPluginD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData12WriterPluginD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPlugin11qt_metacallEN11QMetaObject4CallEiPPv
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPlugin11qt_metacastEPKc
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPlugin18contactsFromStringERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPlugin18dateTimeFromStringERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPluginC1EP7QObject
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPluginC2EP7QObject
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPluginD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPluginD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData15ExtractorPluginD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResult12addImageDataEO4QMapINS_17EmbeddedImageData9ImageTypeE10QByteArrayE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultC1ERK7QStringS3_RK6QFlagsINS0_4FlagEE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultC1ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultC2ERK7QStringS3_RK6QFlagsINS0_4FlagEE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultC2ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16ExtractionResultD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16WriterCollectionC1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16WriterCollectionC2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16WriterCollectionD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16WriterCollectionD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData16WriterCollectionD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData17EmbeddedImageDataC1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData17EmbeddedImageDataC2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData17EmbeddedImageDataD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData17EmbeddedImageDataD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData17EmbeddedImageDataD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData19ExtractorCollection13allExtractorsEv
-libKF6FileMetaData.so.3:_ZN13KFileMetaData19ExtractorCollectionC1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData19ExtractorCollectionC2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData19ExtractorCollectionD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData19ExtractorCollectionD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData19ExtractorCollectionD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResult3addENS_8Property8PropertyERK8QVariant
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResult6appendERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResult7addTypeENS_4Type4TypeE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultC1ERK7QStringS3_RK6QFlagsINS_16ExtractionResult4FlagEE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultC1ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultC2ERK7QStringS3_RK6QFlagsINS_16ExtractionResult4FlagEE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultC2ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData22SimpleExtractionResultaSERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData6Writer5writeERKNS_9WriteDataE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData6WriterC1EOS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData6WriterC2EOS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData6WriterD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData6WriterD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData6WriterD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfo8allNamesEv
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfo8fromNameERK7QString
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoC1ENS_4Type4TypeE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoC1ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoC1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoC2ENS_4Type4TypeE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoC2ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoC2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData8TypeInfoaSERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9Extractor7extractEPNS_16ExtractionResultE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9ExtractorC1EOS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9ExtractorC2EOS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9ExtractorD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9ExtractorD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9ExtractorD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9MimeUtils14strictMimeTypeERK7QStringRK13QMimeDatabase
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteData12addImageDataERK4QMapINS_17EmbeddedImageData9ImageTypeE10QByteArrayE
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteData3addENS_8Property8PropertyERK8QVariant
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataC1ERK7QStringS3_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataC1ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataC2ERK7QStringS3_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataC2ERKS0_
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataD0Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataD1Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataD2Ev
-libKF6FileMetaData.so.3:_ZN13KFileMetaData9WriteDataaSERKS0_
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfo11displayNameEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfo15shouldBeIndexedEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfo21formatAsDisplayStringERK8QVariant
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfo4nameEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfo8propertyEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfo9valueTypeEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12PropertyInfoeqERKS0_
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData11isSupportedEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData11userCommentEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData12hasAttributeERK7QString
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData15queryAttributesE6QFlagsINS0_9AttributeEE
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData17originEmailSenderEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData18originEmailSubjectEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData20originEmailMessageIdEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData4tagsEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData6ratingEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData8filePathEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData9attributeERK7QString
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12UserMetaData9originUrlEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData12WriterPlugin10metaObjectEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData15ExtractorPlugin10metaObjectEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData15ExtractorPlugin20getSupportedMimeTypeERK7QString
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData16ExtractionResult10inputFlagsEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData16ExtractionResult13inputMimetypeEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData16ExtractionResult8inputUrlEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData16ExtractionResult9imageDataEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData16WriterCollection12fetchWritersERK7QString
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData19ExtractorCollection15fetchExtractorsERK7QString
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData22SimpleExtractionResult10propertiesEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData22SimpleExtractionResult4textEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData22SimpleExtractionResult5typesEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData22SimpleExtractionResulteqERKS0_
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData6Writer9mimetypesEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData8TypeInfo11displayNameEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData8TypeInfo4nameEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData8TypeInfo4typeEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData8TypeInfoeqERKS0_
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9Extractor19extractorPropertiesEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9Extractor9mimetypesEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9WriteData10propertiesEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9WriteData13inputMimetypeEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9WriteData8inputUrlEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9WriteData9imageDataEv
-libKF6FileMetaData.so.3:_ZNK13KFileMetaData9WriteDataeqERKS0_
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::allNames()
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::fromName(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::PropertyInfo(KFileMetaData::Property::Property)
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::PropertyInfo(KFileMetaData::PropertyInfo const&)
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::PropertyInfo()
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::PropertyInfo(KFileMetaData::Property::Property)
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::PropertyInfo(KFileMetaData::PropertyInfo const&)
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::PropertyInfo()
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::~PropertyInfo()
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::~PropertyInfo()
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::operator=(KFileMetaData::PropertyInfo const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::hasAttribute(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setAttribute(QString const&, QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setOriginUrl(QUrl const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setUserComment(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setOriginEmailSender(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setOriginEmailSubject(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setOriginEmailMessageId(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setTags(QList<QString> const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::attribute(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::setRating(int)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::UserMetaData(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::UserMetaData(KFileMetaData::UserMetaData const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::UserMetaData(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::UserMetaData(KFileMetaData::UserMetaData const&)
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::~UserMetaData()
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::~UserMetaData()
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::~UserMetaData()
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::operator=(KFileMetaData::UserMetaData const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::qt_metacall(QMetaObject::Call, int, void**)
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::qt_metacast(char const*)
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::WriterPlugin(QObject*)
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::WriterPlugin(QObject*)
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::~WriterPlugin()
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::~WriterPlugin()
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::~WriterPlugin()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::qt_metacall(QMetaObject::Call, int, void**)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::qt_metacast(char const*)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::contactsFromString(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::dateTimeFromString(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::ExtractorPlugin(QObject*)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::ExtractorPlugin(QObject*)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::~ExtractorPlugin()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::~ExtractorPlugin()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::~ExtractorPlugin()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::addImageData(QMap<KFileMetaData::EmbeddedImageData::ImageType, QByteArray>&&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::ExtractionResult(QString const&, QString const&, QFlags<KFileMetaData::ExtractionResult::Flag> const&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::ExtractionResult(KFileMetaData::ExtractionResult const&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::ExtractionResult(QString const&, QString const&, QFlags<KFileMetaData::ExtractionResult::Flag> const&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::ExtractionResult(KFileMetaData::ExtractionResult const&)
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::~ExtractionResult()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::~ExtractionResult()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::~ExtractionResult()
+libKF6FileMetaData.so.3:KFileMetaData::WriterCollection::WriterCollection()
+libKF6FileMetaData.so.3:KFileMetaData::WriterCollection::WriterCollection()
+libKF6FileMetaData.so.3:KFileMetaData::WriterCollection::~WriterCollection()
+libKF6FileMetaData.so.3:KFileMetaData::WriterCollection::~WriterCollection()
+libKF6FileMetaData.so.3:KFileMetaData::WriterCollection::~WriterCollection()
+libKF6FileMetaData.so.3:KFileMetaData::EmbeddedImageData::EmbeddedImageData()
+libKF6FileMetaData.so.3:KFileMetaData::EmbeddedImageData::EmbeddedImageData()
+libKF6FileMetaData.so.3:KFileMetaData::EmbeddedImageData::~EmbeddedImageData()
+libKF6FileMetaData.so.3:KFileMetaData::EmbeddedImageData::~EmbeddedImageData()
+libKF6FileMetaData.so.3:KFileMetaData::EmbeddedImageData::~EmbeddedImageData()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::allExtractors()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::ExtractorCollection()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::ExtractorCollection()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::~ExtractorCollection()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::~ExtractorCollection()
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::~ExtractorCollection()
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::add(KFileMetaData::Property::Property, QVariant const&)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::append(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::addType(KFileMetaData::Type::Type)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::SimpleExtractionResult(QString const&, QString const&, QFlags<KFileMetaData::ExtractionResult::Flag> const&)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::SimpleExtractionResult(KFileMetaData::SimpleExtractionResult const&)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::SimpleExtractionResult(QString const&, QString const&, QFlags<KFileMetaData::ExtractionResult::Flag> const&)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::SimpleExtractionResult(KFileMetaData::SimpleExtractionResult const&)
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::~SimpleExtractionResult()
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::~SimpleExtractionResult()
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::~SimpleExtractionResult()
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::operator=(KFileMetaData::SimpleExtractionResult const&)
+libKF6FileMetaData.so.3:KFileMetaData::Writer::write(KFileMetaData::WriteData const&)
+libKF6FileMetaData.so.3:KFileMetaData::Writer::Writer(KFileMetaData::Writer&&)
+libKF6FileMetaData.so.3:KFileMetaData::Writer::Writer(KFileMetaData::Writer&&)
+libKF6FileMetaData.so.3:KFileMetaData::Writer::~Writer()
+libKF6FileMetaData.so.3:KFileMetaData::Writer::~Writer()
+libKF6FileMetaData.so.3:KFileMetaData::Writer::~Writer()
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::allNames()
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::fromName(QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::TypeInfo(KFileMetaData::Type::Type)
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::TypeInfo(KFileMetaData::TypeInfo const&)
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::TypeInfo()
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::TypeInfo(KFileMetaData::Type::Type)
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::TypeInfo(KFileMetaData::TypeInfo const&)
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::TypeInfo()
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::~TypeInfo()
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::~TypeInfo()
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::operator=(KFileMetaData::TypeInfo const&)
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::extract(KFileMetaData::ExtractionResult*)
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::Extractor(KFileMetaData::Extractor&&)
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::Extractor(KFileMetaData::Extractor&&)
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::~Extractor()
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::~Extractor()
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::~Extractor()
+libKF6FileMetaData.so.3:KFileMetaData::MimeUtils::strictMimeType(QString const&, QMimeDatabase const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::addImageData(QMap<KFileMetaData::EmbeddedImageData::ImageType, QByteArray> const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::add(KFileMetaData::Property::Property, QVariant const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::WriteData(QString const&, QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::WriteData(KFileMetaData::WriteData const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::WriteData(QString const&, QString const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::WriteData(KFileMetaData::WriteData const&)
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::~WriteData()
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::~WriteData()
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::~WriteData()
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::operator=(KFileMetaData::WriteData const&)
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::displayName() const
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::shouldBeIndexed() const
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::formatAsDisplayString(QVariant const&) const
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::name() const
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::property() const
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::valueType() const
+libKF6FileMetaData.so.3:KFileMetaData::PropertyInfo::operator==(KFileMetaData::PropertyInfo const&) const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::isSupported() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::userComment() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::hasAttribute(QString const&) const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::queryAttributes(QFlags<KFileMetaData::UserMetaData::Attribute>) const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::originEmailSender() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::originEmailSubject() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::originEmailMessageId() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::tags() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::rating() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::filePath() const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::attribute(QString const&) const
+libKF6FileMetaData.so.3:KFileMetaData::UserMetaData::originUrl() const
+libKF6FileMetaData.so.3:KFileMetaData::WriterPlugin::metaObject() const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::metaObject() const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorPlugin::getSupportedMimeType(QString const&) const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::inputFlags() const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::inputMimetype() const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::inputUrl() const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractionResult::imageData() const
+libKF6FileMetaData.so.3:KFileMetaData::WriterCollection::fetchWriters(QString const&) const
+libKF6FileMetaData.so.3:KFileMetaData::ExtractorCollection::fetchExtractors(QString const&) const
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::properties() const
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::text() const
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::types() const
+libKF6FileMetaData.so.3:KFileMetaData::SimpleExtractionResult::operator==(KFileMetaData::SimpleExtractionResult const&) const
+libKF6FileMetaData.so.3:KFileMetaData::Writer::mimetypes() const
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::displayName() const
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::name() const
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::type() const
+libKF6FileMetaData.so.3:KFileMetaData::TypeInfo::operator==(KFileMetaData::TypeInfo const&) const
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::extractorProperties() const
+libKF6FileMetaData.so.3:KFileMetaData::Extractor::mimetypes() const
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::properties() const
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::inputMimetype() const
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::inputUrl() const
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::imageData() const
+libKF6FileMetaData.so.3:KFileMetaData::WriteData::operator==(KFileMetaData::WriteData const&) const
