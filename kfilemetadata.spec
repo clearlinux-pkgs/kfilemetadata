@@ -9,7 +9,7 @@
 #
 Name     : kfilemetadata
 Version  : 6.7.0
-Release  : 103
+Release  : 104
 URL      : https://download.kde.org/stable/frameworks/6.7/kfilemetadata-6.7.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/6.7/kfilemetadata-6.7.0.tar.xz
 Source1  : https://download.kde.org/stable/frameworks/6.7/kfilemetadata-6.7.0.tar.xz.sig
